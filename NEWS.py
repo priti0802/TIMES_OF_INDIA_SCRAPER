@@ -10,7 +10,7 @@ import string
 url = 'https://timesofindia.indiatimes.com/topic/Sanitizer/news/'
 soup = BeautifulSoup(get(url).text, 'lxml')
 
-##Because the website displays ages only till 20
+##Because the website displays Pages only till 20
 max_urls = [url + str(i) for i in range(1, 21)]
 
 # Creating empty lists to save all the features
